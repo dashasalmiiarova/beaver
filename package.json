@@ -1,0 +1,22 @@
+{
+  "name": "beaver",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dariiasalmiiarova@bitbucket.org/dariiasalmiiarova/beaver.git"
+  },
+  "author": "Dariia Salmiiarova",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dariiasalmiiarova/beaver#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^2.0.0"
+  }
+}
