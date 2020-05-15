@@ -156,7 +156,6 @@ button:active, button:focus {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 40px;
 }
 .slogan-ingo-p-left{
@@ -272,7 +271,7 @@ button:active, button:focus {
     width: 75%;
     line-height: 18px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     color: #7C7C7C;
 }
 .steps-div-fir{
@@ -303,12 +302,14 @@ button:active, button:focus {
     font-weight: 500;
     color: white;
     text-align: center;
+    margin-top: 30px;
 }
 .services-footer-title{
     font-size: 24px;
     font-weight: 700;
     color: white;
     text-align: center;
+    margin-top: 40px;
 }
 .services-blocks{
     margin-top: 60px;
@@ -357,11 +358,17 @@ button:active, button:focus {
 .submit-button-services{
     background-color: #30BFCE;
     text-transform: uppercase;
+    border: 2px solid #30BFCE;
     color: white;
     font-weight: 600;
     font-size: 14px;
     border-radius: 12px;
     padding: 14px 26px;
+    width: 100%;
+}
+.submit-button-services:hover{
+    background-color: transparent;
+    color: #30BFCE;
 }
 .services-footer-icon-block{
     display: flex;
@@ -369,4 +376,57 @@ button:active, button:focus {
 }
 .serv-p-block{
     color: white;
+}
+.services-footer-icon-block{
+    padding-bottom: 60px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+}
+.serv-icon-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serv-p-block{
+    margin-left: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.main-block-title{
+    margin-top: 60px !important;
+    color: #30BFCE;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.photo-grid{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    grid-template-rows: 260px 260px 260px;
+    row-gap: 70px;
+    justify-content: space-between;    
+}
+.photo-item{
+    width: 100%;
+}
+.contact-custom-p{
+    padding-top: 50px ;
+}
+.contact-bg{
+    background-color: #30BFCE1A;
+    /* height: 700px; */
+}
+.contact-p{
+    margin-top: 30px !important;
+    color: #7C7C7C;
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    width: 450px;
+    margin-bottom: 50px;
 }
