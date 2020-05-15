@@ -104,7 +104,7 @@ button:active, button:focus {
     height: 17px;
     margin-top: 21px;
     padding: 20px;
-    border: 1px solid #30BFCE;
+    border: 2px solid #30BFCE;
     background-color: white;
 }
 .form-dane::placeholder{
@@ -143,7 +143,7 @@ button:active, button:focus {
     color: white;
 }
 .slogan-info-div{
-    margin-top: 62px;
+    padding-top: 62px;
 }
 .slogan-info-title{
     color: #30BFCE;
@@ -396,7 +396,7 @@ button:active, button:focus {
     font-weight: 700;
 }
 .main-block-title{
-    margin-top: 60px !important;
+    padding-top: 60px !important;
     color: #30BFCE;
     font-size: 30px;
     font-weight: 700;
@@ -429,4 +429,118 @@ button:active, button:focus {
     text-align: center;
     width: 450px;
     margin-bottom: 50px;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form-div{
+    width: 45%;
+    height: 400px;
+    margin-bottom: 90px;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.79);
+    border-radius: 24px;
+    border: 2px solid #30BFCE;
+}
+.form-con-input{
+    width: 370px;
+    height: 15px;
+}
+.submit-button-contact{
+    width: 130px;
+}
+footer{
+    background-color: #333333;
+}
+.footer-main{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom-bg{
+    background-color: #2B2B2B;
+    height: 56px;
+}
+.footer-logo{
+    margin-bottom: 10px;
+}
+.footer-logo-p{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.footer-c-width{
+    margin: auto;
+}
+.footer-logo-div{
+    width: 45%;
+}
+
+.custom-mb{
+    margin-bottom: 50px;
+}
+.footer-con-title{
+    text-transform: uppercase;
+    color: #30BFCE;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-block{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.footer-col-img{
+    color: #30BFCE;
+    font-size: 16px;
+}
+.footer-col-inf{
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 7px;
+}
+.footer-col-inf:hover{
+    color: #30BFCE;
+}
+.footer-col-ico{
+    width: 16px;
+    fill: #30BFCE;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+}
+.footer-link{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer-link:hover{
+    color: #30BFCE;
+}
+.footer-bottom {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom-info{
+    color: white;
+}
+.footer-bottom-link{
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom-link:hover{
+    color: #30BFCE;
 }
