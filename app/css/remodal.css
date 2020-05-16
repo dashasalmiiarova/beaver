@@ -1,3 +1,12 @@
+/*
+ *  Remodal - v1.1.1
+ *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+ *  http://vodkabears.github.io/remodal/
+ *
+ *  Made by Ilya Makarov
+ *  Under MIT License
+ */
+
 /* ==========================================================================
    Remodal's necessary styles
    ========================================================================== */
@@ -7,6 +16,7 @@
 html.remodal-is-locked {
   overflow: hidden;
 
+  -ms-touch-action: none;
   touch-action: none;
 }
 
@@ -61,6 +71,7 @@ html.remodal-is-locked {
 
 .remodal-overlay,
 .remodal-wrapper {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -71,6 +82,8 @@ html.remodal-is-locked {
 
   outline: none;
 
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
