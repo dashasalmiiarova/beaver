@@ -1,8 +1,9 @@
-let
+var
     gulp = require("gulp"),
-    browserSync = require('browser-sync'),
+    php = require('gulp-connect-php'),
     gulpCssmin = require('gulp-cssmin'),
-    gulpRename = require('gulp-rename');
+    gulpRename = require('gulp-rename')
+    browserSync = require('browser-sync').create();
 
     gulp.task('mincss', function(){
         return gulp.src('app/css/style.css')
@@ -27,16 +28,24 @@ let
         return gulp.src('app/js/*.js')
         .pipe(browserSync.reload({stream: true}))
     });
+
     gulp.task('browser-sync', function() {
         browserSync.init({
             server: {
                 baseDir: "app/"
             }
-        });
+        //     proxy: "localhost:8010",
+        //     baseDir: "./app/",
+        //     open:true,
+        //     notify: false
+        // browserSync.init
+        //     proxy: "192.168.1.24:8000"
     });
+});
     gulp.task('watch', function(){
         gulp.watch('app/css/style.css', gulp.parallel('mincss'))
         gulp.watch('app/*.html', gulp.parallel('html'))
         gulp.watch('app/js/*.js', gulp.parallel('js'))
+        // gulp.watch('**/*.php', gulp.parallel('js'))
     });
-    gulp.task('default', gulp.parallel('mincss', 'js', 'browser-sync', 'watch'))
+    gulp.task('default', gulp.parallel('mincss', 'js', 'browser-sync', 'watch'));
