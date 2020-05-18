@@ -16,6 +16,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-connect-php": "^1.0.3",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^2.0.0",
     "mapbox": "^1.0.0-beta10",

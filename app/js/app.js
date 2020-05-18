@@ -49,13 +49,59 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFzaGFzYWxtaWlhcm92YSIsImEiOiJjazdrOXFuaTUwM
 var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/dashasalmiiarova/cka8swbpr2slb1iphv4ogad7t',
-center: [29.5222, 52.3064],
-zoom: 15
+center: [29.5418527, 52.3128262],
+zoom: 6.5
 });
 
+// map.setLayoutProperty('country-label', 'text-field', ['get','name_ru']);
+// map.setLayoutProperty('state-label', 'text-field', ['get','name_ru']);
+// map.setLayoutProperty('settlement-label', 'text-field', ['get','name_ru']);
+// map.setLayoutProperty('settlement-subdivision-label', 'text-field', ['get','name_ru']);
+// map.setLayoutProperty('settlement-major-label', 'text-field', ['get','name_ru']);
+// map.setLayoutProperty('settlement-minor-label', 'text-field', ['get','name_ru']);
+
+// Гомель -d
 var marker = new mapboxgl.Marker()
-.setLngLat([12.550343, 55.665957])
+.setLngLat([31.0131698, 52.4238936])
 .addTo(map);
+//Речица -d
+var marker = new mapboxgl.Marker()
+.setLngLat([30.3860239, 52.3717518])
+.addTo(map);
+//Брагин -d
+var marker = new mapboxgl.Marker()
+.setLngLat([30.2686322, 51.7820906])
+.addTo(map);
+//Хойники -d
+var marker = new mapboxgl.Marker()
+.setLngLat([29.96504, 51.88808])
+.addTo(map);
+//Наровля -d
+var marker = new mapboxgl.Marker()
+.setLngLat([29.5068892, 51.7976497])
+.addTo(map);
+//Ельск -d
+var marker = new mapboxgl.Marker()
+.setLngLat([29.1543374, 51.8107943])
+.addTo(map);
+//Мозырь -d
+var marker = new mapboxgl.Marker()
+.setLngLat([29.2667179, 52.0475464])
+.addTo(map);
+//Калинковичи -d
+var marker = new mapboxgl.Marker()
+.setLngLat([29.3314442, 52.1286204])
+.addTo(map);
+//Петриков
+var marker = new mapboxgl.Marker()
+.setLngLat([28.4956961, 52.1259041])
+.addTo(map);
+//Лельчицы
+var marker = new mapboxgl.Marker()
+.setLngLat([28.3289657, 51.7861783])
+.addTo(map);
+
+
 
 var burgerButton = document.getElementsByClassName("toggle-button");
     var p;

@@ -529,6 +529,7 @@ footer{
     font-size: 13px;
     font-weight: 700;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 .footer-block{
     display: flex;
@@ -726,6 +727,7 @@ footer{
         width: 90%;
         margin: auto;
         height: unset;
+        margin-top: 20px;
     }
     .restoration-img-f{
         height: unset;
@@ -745,13 +747,17 @@ footer{
         background-image: none;
         margin: auto;
     }
+    .services-bg{
+        background-image: none;
+        background-color: #646464;
+    }
     .services-blocks{
         flex-direction: column;
     }
     .services-block{
         width: 90%;
         box-sizing: border-box;
-        padding: 10px;
+        padding: 20px;
         margin: auto;
         margin-bottom: 15px;
         border-radius: 7px;
@@ -835,6 +841,7 @@ footer{
     }
     .footer-con-title{
         font-size: 16px;
+        
     }
     .footer-col-inf{
         font-size: 16px;
@@ -851,7 +858,7 @@ footer{
     }
     .contact-form-div{
         padding: 10px 15px;
-        height: 450px !important;
+        height: 400px !important;
     }
     .form-dane{
         padding: 12px;
@@ -859,7 +866,10 @@ footer{
     }
     .form-con-input{
         padding: 10px;
-        width: 160px !important;
+        width: 197px !important;
+    }
+    .submit-button-contact{
+        width: 221px !important;
     }
     
     .footer-c-width{
@@ -888,7 +898,7 @@ footer{
         font-size: 13px;
     }
     .services-block{
-        padding: 13px;
+        padding: 25px;
         width: unset;
     }
     .restoration-title-bg{
@@ -910,7 +920,269 @@ footer{
 
 /* tablets */
 @media screen and (min-width: 426px) and (max-width: 768px){
-
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    }
+    .top-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 90%;
+        margin: auto;
+    }
+    .mobile-logo{
+        width: 200px;
+    }
+    .menu-mobile-block{
+        margin-top: 40px;
+        max-height: 0;
+        margin: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-mobile-block li a{
+        text-decoration: none;
+        color: #66667E;
+        font-weight: 300;
+        font-size: 20px;
+        transition: color 0.5s ease;
+        
+    }
+    .menu-mobile-block li{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    #navbar{
+        display: none;
+    }
+    .mobile-burger-img{
+        color: #30BFCE;
+        font-size: 36px;
+    }
+    .slogan-bg{
+        /* background-image: none; */
+        /* background-color: #30BFCE1F; */
+        height: 500px;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .slogan-inside{
+        width: 75%;
+        height: 350px;
+        padding: 20px 20px;
+        /* background-color: unset; */
+    }
+    .slogan-form-div{
+        padding-top: 20px;
+    }
+    .slogan-title-h3{
+        font-size: 18px;
+        line-height: unset;
+    }
+    .slogan-description-p{
+        font-size: 14px;
+        line-height: unset;
+    }
+    .form-dane{
+        margin: auto;
+        width: 240px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .submit-button{
+        width: 280px;
+        margin: auto;
+    }
+    .button-submit{
+        justify-content: unset;
+    }
+    .slogan-desc-below{
+        font-size: 10px;
+    }
+    .slogan-info-ps{
+        flex-direction: column;
+    }
+    .slogan-ingo-p-left{
+        width: 100%;
+    }
+    .slogan-info-p-right{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .slogan-icons{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .icon-div{
+        width: 80px;
+    }
+    .icon-sl{
+        font-size: 19px;
+    }
+    .icon-p{
+        font-size: 9px;
+    }
+    .restoration-title-bg{
+        height: 75px;
+    }
+    .restoration-info{
+        width: unset;
+    }
+    .restoration-info-title{
+        width: 300px;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .restoration-title{
+        font-size: 19px;
+        padding-top: 20px;
+    }
+    .rest-first{
+        flex-direction: column;
+    }
+    .restoration-title-text{
+        font-size: 17px;
+        width: 100%;
+    }
+    .steps-div-fir{
+        width: 90%;
+        background-image: none;
+        margin: auto;
+    }
+    .step-number{
+        width: unset;
+        padding: 0px 5px 0px 0px;
+    }
+    .restoration-img-div{
+        width: 90%;
+        margin: auto;
+        height: unset;
+        margin-top: 20px;
+    }
+    .restoration-img-f{
+        height: unset;
+    }
+    .restoration-img-l{
+        height: unset;
+    }
+    .restoration-img-order{
+        order: 2;
+    }
+    .restoration-steps-order{
+        order: 1;
+    }
+    .steps-div-sec{
+        background-image:none;
+        width: 90%;
+        background-image: none;
+        margin: auto;
+    }
+    .services-bg{
+        background-image: none;
+        background-color: #646464;
+    }
+    .services-blocks{
+        flex-direction: column;
+    }
+    .services-block{
+        width: 90%;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: auto;
+        margin-bottom: 15px;
+        border-radius: 7px;
+    }
+    .submit-button-services{
+        width: 234px;
+        padding: 12px 20px;
+    }
+    .services-title-h2{
+        font-size: 24px;
+    }
+    .services-desc{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .services-footer-icon-block{
+        width: 100%;
+        flex-direction: column;
+    }
+    .serv-icon-block{
+        justify-content: unset;
+        margin-bottom: 10px;
+    }
+    .photo-grid{
+        grid-template-rows: 260px 260px 260px 260px;
+        grid-template-columns: 260px;
+        justify-content: center;
+        row-gap: 30px;
+        margin-bottom: 20px;
+    }
+    .img-remodal-inside{
+        width: 300px;
+    }
+    .contact-p{
+        width: unset;
+    }
+    .contact-info{
+        flex-direction: column;
+    }
+    .form-con-input{
+        width: 180px;
+    }
+    .contact-form-div{
+        width: 100%;
+        padding: 20px 35px;
+        box-sizing: border-box;
+        height: 430px;
+    }
+    #map{
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .submit-button-contact{
+        width: 100%;
+    }
+    .footer-main{
+        flex-direction: column;
+    }
+    .footer-logo-div{
+        width: 80%;
+        margin: auto;
+    }
+    .footer-c-width{
+        width: 80%;
+    }
+    .footer-bottom{
+        flex-direction: column;
+    }
+    .footer-bottom-mt{
+        margin-top: 10px;
+    }
+    .footer-bottom-info{
+        margin-bottom: 10px;
+    }
+    .footer-bottom-bg{
+        height: 110px;
+    }
+    .footer-link{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .footer-con-title{
+        font-size: 16px;
+        
+    }
+    .footer-col-inf{
+        font-size: 16px;
+    }
+    .footer-col-img{
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
@@ -919,8 +1191,12 @@ footer{
 @media screen and (min-width: 1025px) and (max-width: 1290px){
 
 }
+/* For big screens */
 @media screen and (min-width: 1441px){
     .container{
+        width: 1152px;
+    }
+    .container-steps{
         width: 1152px;
     }
 }
