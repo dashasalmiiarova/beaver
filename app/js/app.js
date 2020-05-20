@@ -100,8 +100,10 @@ var marker = new mapboxgl.Marker()
 var marker = new mapboxgl.Marker()
 .setLngLat([28.3289657, 51.7861783])
 .addTo(map);
-
-
+//Житковичи
+var marker = new mapboxgl.Marker()
+.setLngLat([27.8571199, 52.21905])
+.addTo(map);
 
 var burgerButton = document.getElementsByClassName("toggle-button");
     var p;
