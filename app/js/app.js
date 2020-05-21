@@ -153,3 +153,10 @@ $('.photo-grid').magnificPopup({
     }
     // other options
 });
+
+//Scroll
+(function($){
+    $(window).load(function(){
+        $("#navbar a").mPageScroll2id();
+    });
+})(jQuery);

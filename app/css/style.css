@@ -163,8 +163,9 @@ button:active, button:focus {
     color: white;
 }
 .feedback{
-    color: #30BFCE;
-    margin-top: 80px;
+    color: white;
+    background-color: #30BFCE;
+    margin-top: 20px;
     text-align: center;
     padding: 20px;
     border-radius: 7px;
@@ -662,7 +663,7 @@ footer{
     }
     .slogan-inside{
         width: 75%;
-        height: 400px;
+        /* height: 400px; */
         padding: 14px 20px;
         background-color: unset;
     }
@@ -1290,7 +1291,7 @@ footer{
     }
     .slogan-inside{
         width: 60%;
-        height: 350px;
+        /* height: 350px; */
         padding: 24px 60px;
         /* background-color: unset; */
     }
@@ -1509,7 +1510,7 @@ footer{
     }
     .slogan-inside{
         width: 550px;
-        height: 350px;
+        /* height: 350px; */
         padding: 24px 60px;
     }
     .slogan-title-h3{
@@ -1714,7 +1715,7 @@ footer{
     }
     .slogan-inside{
         width: 550px;
-        height: 350px;
+        /* height: 350px; */
         padding: 24px 60px;
         /* background-color: unset; */
     }
