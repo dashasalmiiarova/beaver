@@ -80,9 +80,9 @@ button:active, button:focus {
     background-position: center top;
     background-attachment: fixed;
     background-size: 100% 100%;
-}
-.slogan-form-div{
-    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slogan-inside{
     width: 500px;
@@ -115,13 +115,11 @@ button:active, button:focus {
 }
 .form-dane{
     border-radius: 12px;
-    width: 70% !important;
-    margin: auto;
     height: 17px;
-    margin-top: 21px;
     padding: 20px;
     border: 2px solid #30BFCE;
     background-color: white;
+    
 }
 .form-dane::placeholder{
     color: #484848;
@@ -144,7 +142,7 @@ button:active, button:focus {
     justify-content: center;
 }
 .submit-button{
-    width: 70% !important;
+    width: 100% !important;
     margin: auto;
     text-transform: uppercase;
     font-size: 14px;
@@ -230,13 +228,16 @@ button:active, button:focus {
 .restoration-title-bg{
     background-color: #d5f3f7;
     height: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .restoration-title{
     font-size: 28px;
     font-weight: 700;
+    height: 100%;
     color: #646464;
     text-align: center;
-    padding-top: 42px;
 }
 .restoration-info{
     width: 500px;
@@ -264,7 +265,6 @@ button:active, button:focus {
 .restoration-info-title{
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
 }
 .restoration-title-ten{
     font-size: 30px;
@@ -506,20 +506,15 @@ button:active, button:focus {
     border: 2px solid #30BFCE;
 }
 .form-con-input{
-    width: 80%;
     height: 15px;
-    margin: auto;
     margin-bottom: 15px;
-}
-.submit-button-contact{
-    width: 80%;
-    margin: auto;
 }
 footer{
     background-color: #333333;
 }
 .footer-main{
     padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -666,9 +661,6 @@ footer{
         padding: 14px 20px;
         background-color: unset;
     }
-    .slogan-form-div{
-        padding-top: 20px;
-    }
     .slogan-title-h3{
         font-size: 18px;
         line-height: unset;
@@ -679,15 +671,7 @@ footer{
     }
     .form-dane{
         /* width: 240px; */
-        width: 70% !important;
-        margin: auto;
         font-size: 16px;
-        margin-top: 15px;
-    }
-    .submit-button{
-        /* width: 280px; */
-        width: 70% !important;
-        margin: auto;
     }
     .button-submit{
         justify-content: unset;
@@ -728,11 +712,9 @@ footer{
         width: 300px;
         align-items: center;
         margin: auto;
-        margin-top: 20px;
     }
     .restoration-title{
         font-size: 19px;
-        padding-top: 20px;
     }
     .rest-first{
         flex-direction: column;
@@ -824,34 +806,33 @@ footer{
     .contact-info{
         flex-direction: column;
     }
-    .form-con-input{
-        width: 180px;
-    }
     .contact-form-div{
         width: 100%;
-        padding: 20px 35px;
+        padding: 35px 35px;
         box-sizing: border-box;
-        height: 430px;
+        height: unset;
+        margin-top: 50px;
     }
     #map{
         width: 100% !important;
         margin-bottom: 20px;
     }
-    .submit-button-contact{
-        width: 100%;
-    }
+
     .footer-main{
         flex-direction: column;
     }
     .footer-logo-div{
         width: 80%;
         margin: auto;
+        text-align: center;
     }
     .footer-c-width{
         width: 80%;
     }
     .footer-bottom{
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     .footer-bottom-mt{
         margin-top: 10px;
@@ -868,6 +849,7 @@ footer{
     }
     .footer-con-title{
         font-size: 16px;
+        text-align: center;
         
     }
     .footer-col-inf{
@@ -875,6 +857,15 @@ footer{
     }
     .footer-col-img{
         font-size: 16px;
+    }
+    .footer-menu {
+        text-align: center;
+    }
+    .footer-block {
+        justify-content: center;
+    }
+    .footer-c-width {
+        margin-top: 50px;
     }
 }
 /* iphone 5 */
@@ -885,26 +876,19 @@ footer{
         padding: 13px;
     }
     .contact-form-div{
-        padding: 10px 15px;
-        height: 350px !important;
+        padding: 25px 25px;
+        height: unset;
+        margin-top: 50px;
     }
     .form-dane{
         padding: 12px;
         /* width: 232px; */
-        width: 70% !important;
     }
     .form-con-input{
-        padding: 10px;
+        padding: 15px;
         /* width: 197px !important; */
-        width: 70% !important;
-        margin: auto;
-        margin-top: 10px;
     }
-    .submit-button-contact{
-        /* width: 221px !important; */
-        width: 70% !important;
-        margin: auto;
-    }
+
     .footer-c-width{
         margin: unset;
         width: unset;
@@ -912,6 +896,7 @@ footer{
     .footer-logo-div{
         width: unset;
         margin: unset;
+        text-align: center;
     }
     .footer-bottom-bg{
         height: 110px;
@@ -946,8 +931,14 @@ footer{
     .img-remodal-inside{
         width: 100%;
     }
-    .slogan-form-div{
-        margin-top: 20px;
+    .footer-menu {
+        text-align: center;
+    }
+    .footer-block {
+        justify-content: center;
+    }
+    .footer-c-width {
+        margin-top: 50px;
     }
 }
 /* tablets */
@@ -1004,11 +995,8 @@ footer{
     .slogan-inside{
         width: 75%;
         /* height: 350px; */
-        padding: 20px 20px;
+        padding: 24px 60px;
         /* background-color: unset; */
-    }
-    .slogan-form-div{
-        padding-top: 20px;
     }
     .slogan-title-h3{
         font-size: 18px;
@@ -1019,12 +1007,7 @@ footer{
         line-height: unset;
     }
     .form-dane{
-        margin: auto;
-        /* width: 300px; */
-        width: 70% !important;
-        margin: auto;
         font-size: 16px;
-        margin-top: 20px;
     }
     .submit-button{
         width: 60%;
@@ -1074,11 +1057,9 @@ footer{
         width: 90%;
         align-items: center;
         margin: auto;
-        margin-top: 20px;
     }
     .restoration-title{
         font-size: 19px;
-        padding-top: 20px;
     }
     .rest-first{
         flex-direction: column;
@@ -1182,29 +1163,26 @@ footer{
     .contact-info{
         flex-direction: column;
     }
-    .form-con-input{
-        width: 495px;
-    }
     .contact-form-div{
         width: 100%;
-        padding: 20px 35px;
+        padding: 35px 35px;
         box-sizing: border-box;
-        height: 430px;
+        height: unset;
+        margin-top: 50px;
+
     }
     #map{
         width: 100% !important;
         margin-bottom: 20px;
     }
-    .submit-button-contact{
-        width: 70%;
-        margin: auto;
-    }
+
     .footer-main{
         flex-direction: column;
     }
     .footer-logo-div{
         width: 90%;
         margin: auto;
+        text-align: center;
     }
     .footer-c-width{
         width: 90%;
@@ -1227,6 +1205,7 @@ footer{
     }
     .footer-con-title{
         font-size: 16px;
+        text-align: center;
         
     }
     .footer-col-inf{
@@ -1234,6 +1213,15 @@ footer{
     }
     .footer-col-img{
         font-size: 16px;
+    }
+    .footer-menu {
+        text-align: center;
+    }
+    .footer-block {
+        justify-content: center;
+    }
+    .footer-c-width {
+        margin-top: 50px;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 840px){
@@ -1298,11 +1286,8 @@ footer{
     .slogan-inside{
         width: 60%;
         height: 350px;
-        padding: 20px 20px;
+        padding: 24px 60px;
         /* background-color: unset; */
-    }
-    .slogan-form-div{
-        padding-top: 20px;
     }
     .slogan-title-h3{
         font-size: 18px;
@@ -1313,10 +1298,7 @@ footer{
         line-height: unset;
     }
     .form-dane{
-        margin: auto;
-        width: 495px;
         font-size: 16px;
-        margin-top: 20px;
     }
     .submit-button{
         width: 535px;
@@ -1365,11 +1347,9 @@ footer{
         width: 80%;
         align-items: center;
         margin: auto;
-        margin-top: 20px;
     }
     .restoration-title{
         font-size: 19px;
-        padding-top: 20px;
     }
     .restoration-title-text{
         font-size: 17px;
@@ -1407,9 +1387,9 @@ footer{
         margin: auto;
     }
     .services-block{
-        width: 200px;
+        width: 250px;
         box-sizing: border-box;
-        padding: 15px;
+        padding: 26px;
         margin: auto;
         margin-bottom: 15px;
         border-radius: 7px;
@@ -1466,23 +1446,16 @@ footer{
     .contact-p{
         width: unset;
     }
-    .form-con-input{
-        width: 215px;
-    }
     .contact-form-div{
         width: 45%;
         padding: 20px 35px;
         box-sizing: border-box;
-        height: 430px;
     }
     #map{
         width: 50% !important;
         margin-bottom: 20px;
     }
-    .submit-button-contact{
-        width: 70%;
-        margin: auto;
-    }
+
 
     .footer-logo-div{
         margin: 0 auto;
@@ -1513,19 +1486,6 @@ footer{
         font-size: 16px;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 895px){
-    .form-dane{
-        /* width: 400px; */
-        width: 70% !important;
-    }
-    .submit-button{
-        width: 70%;
-        margin: auto;
-    }
-    .form-con-input{
-        width: 170px;
-    }
-}
 @media screen and (min-width: 1025px) and (max-width: 1279px){
     .container{
         width: 80%;
@@ -1547,11 +1507,8 @@ footer{
     .slogan-inside{
         width: 550px;
         height: 350px;
-        padding: 30px;
+        padding: 24px 60px;
         /* background-color: unset; */
-    }
-    .slogan-form-div{
-        padding-top: 55px;
     }
     .slogan-title-h3{
         font-size: 18px;
@@ -1562,11 +1519,7 @@ footer{
         line-height: unset;
     }
     .form-dane{
-        margin: auto;
-        /* width: 495px; */
-        width: 70% !important;
         font-size: 16px;
-        margin-top: 20px;
     }
     .submit-button{
         /* width: 535px; */
@@ -1616,11 +1569,9 @@ footer{
         width: 80%;
         align-items: center;
         margin: auto;
-        margin-top: 20px;
     }
     .restoration-title{
         font-size: 19px;
-        padding-top: 20px;
     }
     .restoration-title-text{
         font-size: 17px;
@@ -1717,24 +1668,16 @@ footer{
     .contact-p{
         width: unset;
     }
-    .form-con-input{
-        /* width: 215px; */
-        width: 70% !important;
-    }
     .contact-form-div{
         width: 45%;
         padding: 20px 35px;
         box-sizing: border-box;
-        height: 430px;
     }
     #map{
         width: 50% !important;
         margin-bottom: 20px;
     }
-    .submit-button-contact{
-        width: 70%;
-        margin: auto;
-    }
+
 
     .footer-logo-div{
         /* width: 90%; */
@@ -1780,11 +1723,8 @@ footer{
     .slogan-inside{
         width: 550px;
         height: 350px;
-        padding: 40px;
+        padding: 24px 60px;
         /* background-color: unset; */
-    }
-    .slogan-form-div{
-        padding-top: 35px;
     }
     .slogan-title-h3{
         font-size: 18px;
@@ -1795,10 +1735,8 @@ footer{
         line-height: unset;
     }
     .form-dane{
-        margin: auto;
-        width: 70% !important;
         font-size: 16px;
-        margin-top: 20px;
+
     }
     .submit-button{
         width: 70% !important;
@@ -1839,11 +1777,9 @@ footer{
         width: 80%;
         align-items: center;
         margin: auto;
-        margin-top: 20px;
     }
     .restoration-title{
         font-size: 19px;
-        padding-top: 20px;
     }
     .restoration-title-text{
         font-size: 17px;
@@ -1933,9 +1869,6 @@ footer{
     .contact-p{
         width: unset;
     }
-    .form-con-input{
-        width: 70% !important;
-    }
     .contact-form-div{
         width: 45%;
         padding: 20px 35px;
@@ -1945,10 +1878,7 @@ footer{
         width: 50% !important;
         margin-bottom: 20px;
     }
-    .submit-button-contact{
-        width: 70%;
-        margin: auto;
-    }
+
     .footer-logo-div{
         margin: 0 auto;
     }
@@ -1987,4 +1917,13 @@ footer{
         width: 1252px;
         margin: auto;
     }
+}
+.sticky  {
+    box-shadow: 0 0 20px 0 #b1b1b1;
+}
+.restoration-main {
+    padding: 60px 0;
+}
+.custom-input-margin {
+    margin-top: 20px;
 }
