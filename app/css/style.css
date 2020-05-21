@@ -52,6 +52,10 @@ button:active, button:focus {
 .mobile-menu{
     display: none;
 }
+.anchor{
+    margin-top: -110px;
+    padding-top: 110px;
+}
 .menu{
     display: flex;
     width: 580px;
@@ -76,7 +80,8 @@ button:active, button:focus {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     height: 671px;
-    margin-top: 110px;
+    /* margin-top: 110px; */
+    padding-top: 110px;
     background-position: center top;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -1497,8 +1502,6 @@ footer{
         font-size: 16px;
     }
     .slogan-bg{
-        /* background-image: none; */
-        /* background-color: #30BFCE1F; */
         margin: auto 0;
         height: 500px;
         width: 100%;
@@ -1508,7 +1511,6 @@ footer{
         width: 550px;
         height: 350px;
         padding: 24px 60px;
-        /* background-color: unset; */
     }
     .slogan-title-h3{
         font-size: 18px;
@@ -1579,7 +1581,6 @@ footer{
     }
     .steps-div-fir{
         width: 80%;
-        background-image: none;
         margin: auto;
     }
     .step-number{
@@ -1589,8 +1590,6 @@ footer{
     .restoration-img-div{
         width: 50%;
         margin: auto;
-        /* height: unset; */
-        /* margin-top: 20px; */
     }
     .step-mt{
         margin-top: unset;
@@ -1603,13 +1602,10 @@ footer{
     }
     
     .steps-div-sec{
-        background-image:none;
         width: 80%;
-        background-image: none;
         margin: auto;
     }
     .services-block{
-        /* width: 80%; */
         box-sizing: border-box;
         padding: 17px;
         margin: auto;
@@ -1617,7 +1613,6 @@ footer{
         border-radius: 7px;
     }
     .submit-button-services{
-        /* width: 234px; */
         padding: 12px 20px;
     }
     .serv-block-price{
@@ -1677,10 +1672,7 @@ footer{
         width: 50% !important;
         margin-bottom: 20px;
     }
-
-
     .footer-logo-div{
-        /* width: 90%; */
         margin: 0 auto;
     }
     .footer-c-width{
@@ -1787,7 +1779,6 @@ footer{
     }
     .steps-div-fir{
         width: 80%;
-        background-image: none;
         margin: auto;
     }
     .step-number{
@@ -1808,9 +1799,7 @@ footer{
         height: 400px;
     }
     .steps-div-sec{
-        background-image:none;
         width: 80%;
-        background-image: none;
         margin: auto;
     }
     .services-block{

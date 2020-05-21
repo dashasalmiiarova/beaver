@@ -1,8 +1,9 @@
 var
     gulp = require("gulp"),
-    php = require('gulp-connect-php'),
+    // php = require('gulp-connect-php'),
+    mail = require('gulp-mail'),
     gulpCssmin = require('gulp-cssmin'),
-    gulpRename = require('gulp-rename')
+    gulpRename = require('gulp-rename'),
     browserSync = require('browser-sync').create();
 
     gulp.task('mincss', function(){
@@ -29,17 +30,13 @@ var
         .pipe(browserSync.reload({stream: true}))
     });
 
+
+
     gulp.task('browser-sync', function() {
         browserSync.init({
             server: {
                 baseDir: "app/"
             }
-        //     proxy: "localhost:8010",
-        //     baseDir: "./app/",
-        //     open:true,
-        //     notify: false
-        // browserSync.init
-        //     proxy: "192.168.1.24:8000"
     });
 });
     gulp.task('watch', function(){
