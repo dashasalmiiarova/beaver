@@ -47,10 +47,13 @@
                     <div class="slogan-title"><h3 class="slogan-title-h3">Закажите бесплатную консультацию</h3></div>
                     <div class="slogan-description"><p class="slogan-description-p">Введите номер телефона и Вы получите професиональную консультацию</p></div>
 
-                    <form action="./action.php" method="POST" name="slogan-form" class="slogan-form">
+                    <form id="testform" class="slogan-form">
+                        <input type="hidden" name="project_name" value="Awesome App">
+                        <input type="hidden" name="admin_email" value="dashasalmiiarova@gmail.com">
+                        <input type="hidden" name="form_subject" value="Contact Form">
                         <div class="form-line">
                             <input type="text" class="form-imie custom-input-margin form-dane" name="first_name" placeholder="Ваше имя" required>
-                            <input type="tel" class="form-telefon custom-input-margin form-dane" name="tel" placeholder="Номер телефона" required>
+                            <input type="number" class="form-telefon custom-input-margin form-dane" name="tel" placeholder="Номер телефона" required>
                         </div>
                         <div class="button-submit">
                             <button class="submit-button">заказать</button>
@@ -400,5 +403,7 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
     <script src="js/remodal.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
