@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
@@ -52,17 +53,14 @@
                         <input type="hidden" name="form_subject" value="Форма шапки сайта">
                         <div class="form-line">
                             <input type="text" class="form-imie custom-input-margin form-dane" name="Имя" placeholder="Ваше имя" required>
-                            <input type="number" class="form-telefon custom-input-margin form-dane" name="Номер телефона" placeholder="Номер телефона" required>
+                            <input type="tel" class="form-telefon custom-input-margin form-dane" name="Номер телефона" placeholder="Номер телефона" required>
                         </div>
                         <div class="button-submit">
                             <button class="submit-button">заказать</button>
                         </div>
-                        <div class="feedback feedback-disabled">
+                        <div id="sloganfeedback" class="feedback feedback-disabled">
                             Сообщение было отправлено! Мы свяжемся с Вами в скором времени
                         </div>
-                        <!-- <div id="feedback" class="feedback feedback-disabled">
-                            Сообщение было отправлено! Мы свяжемся с Вами в скором времени
-                        </div> -->
                     </form>
                     <div class="slogan-description-below"><p class="slogan-desc-below">Мы гарантируем полную конфиденциальность! Ваши данные ни в коем случае не будут переданы третьим лицам!</p></div>
                 </div>
@@ -182,19 +180,19 @@
                         <a href="#services-modal1" class="submit-a-services">заказать услугу</a>
                         <div class="remodal" data-remodal-id="services-modal1">
                             <button data-remodal-action="close" class="remodal-close"></button>
-                            <form id="seriveform1" class="contact-form site-form">
+                            <form id="serviceform2" class="contact-form site-form">
                                 <input type="hidden" name="project_name" value="Beaver">
                                 <input type="hidden" name="admin_email" value="beaver.inf@gmail.com">
                                 <input type="hidden" name="form_subject" value="Услуга - ремонт ванной 120 см">
                                 <div class="form-line">
-                                    <input type="text" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
-                                    <input type="tel" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
-                                    <input type="email" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
+                                    <input type="text" name="Имя" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
+                                    <input type="tel" name="Номер телефона" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
+                                    <input type="email" name="Адрес електронной почты"  class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
                                 </div>
                                 <div class="button-submit">
                                     <button class="submit-button-services submit-button-contact">заказать услугу</button>
                                 </div>
-                                <div class="feedback feedback-disabled">
+                                <div id="servicefeedback2" class="feedback feedback-disabled">
                                     Сообщение было отправлено! Мы свяжемся с Вами в скором времени
                                 </div>
                             </form>
@@ -204,22 +202,22 @@
                         <div class="serv-block-title">ВАННА 150 см</div>
                         <div class="serv-block-price">Цена от 100 рублей</div>
                         <div class="serv-block-description">Ремонт ванны 150 см. Время полного высыхания 48 часов Время работы 2 часа</div>
-                        <a href="#services-modal1" class="submit-a-services">заказать услугу</a>
-                        <div class="remodal" data-remodal-id="services-modal1">
+                        <a href="#services-modal2" class="submit-a-services">заказать услугу</a>
+                        <div class="remodal" data-remodal-id="services-modal2">
                             <button data-remodal-action="close" class="remodal-close"></button>
-                            <form id="seriveform2" class="contact-form site-form">
+                            <form id="serviceform2" class="contact-form site-form">
                                 <input type="hidden" name="project_name" value="Beaver">
                                 <input type="hidden" name="admin_email" value="beaver.inf@gmail.com">
                                 <input type="hidden" name="form_subject" value="Услуга - ремонт ванной 150 см">
                                 <div class="form-line">
-                                    <input type="text" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
-                                    <input type="tel" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
-                                    <input type="email" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
+                                    <input type="text" name="Имя" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
+                                    <input type="tel" name="Номер телефона" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
+                                    <input type="email" name="Адрес електронной почты"  class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
                                 </div>
                                 <div class="button-submit">
                                     <button class="submit-button-services submit-button-contact">заказать услугу</button>
                                 </div>
-                                <div class="feedback feedback-disabled">
+                                <div id="servicefeedback2" class="feedback feedback-disabled">
                                     Сообщение было отправлено! Мы свяжемся с Вами в скором времени
                                 </div>
                             </form>
@@ -229,22 +227,22 @@
                         <div class="serv-block-title">ВАННА 170 см</div>
                         <div class="serv-block-price">Цена от 110 рублей</div>
                         <div class="serv-block-description">Ремонт ванны 170 см. Время полного высыхания 48 часов Время работы 2 часа</div>
-                        <a href="#services-modal1" class="submit-a-services">заказать услугу</a>
-                        <div class="remodal" data-remodal-id="services-modal1">
+                        <a href="#services-modal3" class="submit-a-services">заказать услугу</a>
+                        <div class="remodal" data-remodal-id="services-modal3">
                             <button data-remodal-action="close" class="remodal-close"></button>
-                            <form id="seriveform3" class="contact-form site-form">
+                            <form id="serviceform3" class="contact-form site-form">
                                 <input type="hidden" name="project_name" value="Beaver">
                                 <input type="hidden" name="admin_email" value="beaver.inf@gmail.com">
                                 <input type="hidden" name="form_subject" value="Услуга - ремонт ванной 170 см">
                                 <div class="form-line">
-                                    <input type="text" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
-                                    <input type="tel" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
-                                    <input type="email" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
+                                    <input type="text" name="Имя" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
+                                    <input type="tel" name="Номер телефона" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
+                                    <input type="email" name="Адрес електронной почты" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
                                 </div>
                                 <div class="button-submit">
                                     <button class="submit-button-services submit-button-contact">заказать услугу</button>
                                 </div>
-                                <div class="feedback feedback-disabled">
+                                <div id="servicefeedback3" class="feedback feedback-disabled">
                                     Сообщение было отправлено! Мы свяжемся с Вами в скором времени
                                 </div>
                             </form>
@@ -257,22 +255,22 @@
                         <div class="serv-block-title">Снятие старого покрытия</div>
                         <div class="serv-block-description">Если ванна ранее уже чем то покрывалась</div>
                         <div class="serv-block-price">Цена 20 рублей</div>
-                        <a href="#services-modal1" class="submit-a-services">заказать услугу</a>
-                        <div class="remodal" data-remodal-id="services-modal1">
+                        <a href="#services-modal4" class="submit-a-services">заказать услугу</a>
+                        <div class="remodal" data-remodal-id="services-modal4">
                             <button data-remodal-action="close" class="remodal-close"></button>
-                            <form id="seriveform4" class="contact-form site-form">
+                            <form id="serviceform4" class="contact-form site-form">
                                 <input type="hidden" name="project_name" value="Beaver">
                                 <input type="hidden" name="admin_email" value="beaver.inf@gmail.com">
                                 <input type="hidden" name="form_subject" value="Услуга - снятие старого покрытия">
                                 <div class="form-line">
-                                    <input type="text" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
-                                    <input type="tel" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
-                                    <input type="email" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
+                                    <input type="text" name="Имя" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
+                                    <input type="tel" name="Номер телефона" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
+                                    <input type="email" name="Адрес електронной почты" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
                                 </div>
                                 <div class="button-submit">
                                     <button class="submit-button-services submit-button-contact">заказать услугу</button>
                                 </div>
-                                <div class="feedback feedback-disabled">
+                                <div id="servicefeedback4" class="feedback feedback-disabled">
                                     Сообщение было отправлено! Мы свяжемся с Вами в скором времени
                                 </div>
                             </form>
@@ -282,22 +280,22 @@
                         <div class="serv-block-title">Демонтаж и установка нового сифона</div>
                         <div class="serv-block-description"></div>
                         <div class="serv-block-price">Цена 20 рублей</div>
-                        <a href="#services-modal1" class="submit-a-services">заказать услугу</a>
-                        <div class="remodal" data-remodal-id="services-modal1">
+                        <a href="#services-modal5" class="submit-a-services">заказать услугу</a>
+                        <div class="remodal" data-remodal-id="services-modal5">
                             <button data-remodal-action="close" class="remodal-close"></button>
-                            <form id="seriveform5" class="contact-form site-form">
+                            <form id="serviceform5" class="contact-form site-form">
                                 <input type="hidden" name="project_name" value="Beaver">
                                 <input type="hidden" name="admin_email" value="beaver.inf@gmail.com">
                                 <input type="hidden" name="form_subject" value="Услуга - демонтаж и установка нового сифона">
                                 <div class="form-line">
-                                    <input type="text" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
-                                    <input type="tel" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
-                                    <input type="email" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
+                                    <input type="text" name="Имя" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
+                                    <input type="tel" name="Номер телефона" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
+                                    <input type="email" name="Адрес електронной почты" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
                                 </div>
                                 <div class="button-submit">
                                     <button class="submit-button-services submit-button-contact">заказать услугу</button>
                                 </div>
-                                <div class="feedback feedback-disabled">
+                                <div id="servicefeedback5" class="feedback feedback-disabled">
                                     Сообщение было отправлено! Мы свяжемся с Вами в скором времени
                                 </div>
                             </form>
@@ -307,22 +305,22 @@
                         <div class="serv-block-title">Цвет не белый</div>
                         <div class="serv-block-description"></div>
                         <div class="serv-block-price">Цена 10 рублей</div>
-                        <a href="#services-modal1" class="submit-a-services">заказать услугу</a>
-                        <div class="remodal" data-remodal-id="services-modal1">
+                        <a href="#services-modal6" class="submit-a-services">заказать услугу</a>
+                        <div class="remodal" data-remodal-id="services-modal6">
                             <button data-remodal-action="close" class="remodal-close"></button>
-                            <form id="seriveform6" class="contact-form site-form">
+                            <form id="serviceform6" class="contact-form site-form">
                                 <input type="hidden" name="project_name" value="Beaver">
                                 <input type="hidden" name="admin_email" value="beaver.inf@gmail.com">
                                 <input type="hidden" name="form_subject" value="Услуга - цвет не белый">
                                 <div class="form-line">
-                                    <input type="text" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
-                                    <input type="tel" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
-                                    <input type="email" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
+                                    <input type="text" name="Имя" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
+                                    <input type="tel" name="Номер телефона" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
+                                    <input type="email" name="Адрес електронной почты" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
                                 </div>
                                 <div class="button-submit">
                                     <button class="submit-button-services submit-button-contact">заказать услугу</button>
                                 </div>
-                                <div class="feedback feedback-disabled">
+                                <div id="servicefeedback6" class="feedback feedback-disabled">
                                     Сообщение было отправлено! Мы свяжемся с Вами в скором времени
                                 </div>
                             </form>
@@ -383,16 +381,16 @@
                         <form id="contactform" class="contact-form site-form">
                             <input type="hidden" name="project_name" value="Beaver">
                             <input type="hidden" name="admin_email" value="beaver.inf@gmail.com">
-                            <input type="hidden" name="form_subject" value="Просьба связатся">
+                            <input type="hidden" name="form_subject" value="Просьба сконтактироваться">
                             <div class="form-line">
-                                <input type="text" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
-                                <input type="tel" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
-                                <input type="email" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
+                                <input type="text" name="Имя" class="form-imie form-dane form-con-input" placeholder="Ваше имя" required>
+                                <input type="tel" name="Номер телефона" class="form-telefon form-dane form-con-input" placeholder="Номер телефона" required>
+                                <input type="email" name="Адрес електронной почты" class="form-telefon form-dane form-con-input" placeholder="Адрес электронной почты" required>
                             </div>
                             <div class="button-submit">
                                 <button class="submit-button-services submit-button-contact">выслать</button>
                             </div>
-                            <div class="feedback feedback-disabled">
+                            <div id="contactfeedback" class="feedback feedback-disabled">
                                 Сообщение было отправлено! Мы свяжемся с Вами в скором времени
                             </div>
                         </form>

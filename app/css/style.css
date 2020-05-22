@@ -80,7 +80,6 @@ button:active, button:focus {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     height: 671px;
-    /* margin-top: 110px; */
     padding-top: 110px;
     background-position: center top;
     background-attachment: fixed;
@@ -91,7 +90,6 @@ button:active, button:focus {
 }
 .slogan-inside{
     width: 500px;
-    /* height: 434px; */
     height: 70%;
     margin: auto;
     background-color: rgba(238, 238, 238, 0.78);
@@ -159,9 +157,22 @@ button:active, button:focus {
     color: white;
 }
 .submit-button:hover{
-    background-color: transparent;
+    background-color: #30BFCE;
     color: white;
 }
+.submit-button:focus{
+    background-color: #30BFCE !important;
+    color: white !important;
+}
+.submit-button:visited{
+    background-color: #30BFCE !important;
+    color: white !important;
+}
+.submit-button:visited{
+    background-color: #30BFCE !important;
+    color: white !important;
+}
+
 .feedback{
     color: white;
     background-color: #30BFCE;
@@ -425,6 +436,7 @@ button:active, button:focus {
     background-color: transparent;
     color: #30BFCE;
 }
+
 .services-footer-icon-block{
     display: flex;
     justify-content: space-between;
@@ -503,7 +515,6 @@ button:active, button:focus {
 }
 .contact-form-div{
     width: 45%;
-    height: 400px;
     margin-bottom: 90px;
     padding: 30px 40px;
     box-sizing: border-box;
@@ -657,13 +668,14 @@ footer{
     .slogan-bg{
         background-image: none;
         background-color: #30BFCE1F;
-        height: 500px;
+        height: unset;
         width: 100%;
-        margin-top: 100px;
+        justify-content: unset;
+        align-items: unset;
     }
     .slogan-inside{
         width: 75%;
-        /* height: 400px; */
+        height: unset;
         padding: 14px 20px;
         background-color: unset;
     }
@@ -877,8 +889,9 @@ footer{
 /* iphone 5 */
 @media screen and (min-width: 315px) and (max-width: 350px){
     .slogan-inside{
-        width: 260px;
-        /* width: 70%; */
+        /* width: 260px; */
+        width: 100%;
+        width: 80%;
         padding: 13px;
     }
     .contact-form-div{
@@ -992,15 +1005,11 @@ footer{
         font-size: 36px;
     }
     .slogan-bg{
-        /* background-image: none; */
-        /* background-color: #30BFCE1F; */
-        height: 500px;
         width: 100%;
-        margin-top: 100px;
     }
     .slogan-inside{
         width: 75%;
-        /* height: 350px; */
+        height: unset;
         padding: 24px 60px;
         /* background-color: unset; */
     }
@@ -1285,15 +1294,13 @@ footer{
     .slogan-bg{
         /* background-image: none; */
         /* background-color: #30BFCE1F; */
-        height: 500px;
+        /* height: 600px; */
         width: 100%;
-        margin-top: 100px;
     }
     .slogan-inside{
         width: 60%;
-        /* height: 350px; */
+        height: unset;
         padding: 24px 60px;
-        /* background-color: unset; */
     }
     .slogan-title-h3{
         font-size: 18px;
@@ -1456,6 +1463,7 @@ footer{
         width: 45%;
         padding: 20px 35px;
         box-sizing: border-box;
+        height: unset;
     }
     #map{
         width: 50% !important;
@@ -1504,13 +1512,11 @@ footer{
     }
     .slogan-bg{
         margin: auto 0;
-        height: 500px;
         width: 100%;
-        margin-top: 100px;
     }
     .slogan-inside{
         width: 550px;
-        /* height: 350px; */
+        height: unset;
         padding: 24px 60px;
     }
     .slogan-title-h3{
@@ -1668,6 +1674,7 @@ footer{
         width: 45%;
         padding: 20px 35px;
         box-sizing: border-box;
+        height: unset;
     }
     #map{
         width: 50% !important;
@@ -1708,16 +1715,13 @@ footer{
     }
     .slogan-bg{
         background-position:bottom center;
-        height: 500px;
         width: 100%;
         margin: auto 0;
-        margin-top: 100px;
     }
     .slogan-inside{
         width: 550px;
-        /* height: 350px; */
         padding: 24px 60px;
-        /* background-color: unset; */
+        height: unset;
     }
     .slogan-title-h3{
         font-size: 18px;
@@ -1863,6 +1867,7 @@ footer{
         width: 45%;
         padding: 20px 35px;
         box-sizing: border-box;
+        height: unset;
     }
     #map{
         width: 50% !important;
@@ -1916,4 +1921,7 @@ footer{
 }
 .custom-input-margin {
     margin-top: 20px;
+}
+.contact-description-disabled{
+    display: none;
 }
